@@ -30,6 +30,7 @@ function addStar(){
   star.position.set(x,y,z)
   scene.add(star)
 }
+Array(200).fill().forEach(addStar)
 function animate() {
   requestAnimationFrame( animate );
   torus.rotation.x += 0.01;
